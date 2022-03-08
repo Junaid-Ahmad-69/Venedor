@@ -1,0 +1,25 @@
+{
+  "name": "bootstrap_install",
+  "version": "1.0.0",
+  "description": "veneder with boostrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-dev": "sass --watch --update --style=expanded scss:css",
+    "sass-prod": "sass --no-source-map --style=compressed scss:css"
+  },
+  "author": "Junaid Ahmad",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.8.1",
+    "font-awesome": "^4.7.0",
+    "get-google-fonts": "^1.2.2",
+    "jquery": "^3.6.0",
+    "owl.carousel": "^2.3.4",
+    "slick-carousel": "^1.8.1",
+    "slick-carousel-browserify": "^1.6.12",
+    "slick-slider": "^1.8.2",
+    "typeface-pt-sans": "^1.1.13"
+  }
+}

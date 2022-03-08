@@ -1,0 +1,97 @@
+@import "Variable";
+section{
+    .container{
+        .row{
+            .col-md-2{
+                flex: 0 0 10%;
+                .logo{
+                    img{
+                        object-fit:cover;
+                    }
+                }
+            }
+            .col-md-8{
+                .navbar{
+                    .container-fluid{
+                        .collapse{
+                            display: flex; 
+                            justify-content: flex-end;
+                            .navbar-nav{
+                                .nav-item{
+                                    .nav-link{
+                                        padding: 0 20px 10px 20px;
+                                        text-decoration: none;
+                                        color: $light_black;
+                                        color: $light_black;
+                                        text-transform: uppercase;
+                                        font-size: 13px;
+                                        font-weight: 600;
+                                        letter-spacing: 1px;
+                                        &:hover{
+                                            opacity: .65;
+                                        }
+                                    }
+                                    .dropdown-menu{
+                                        outline: none;
+                                        border: none;
+                                        padding: 10px 0 10px 15px;
+                                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                                        color: $light_brown;
+                                        font-size: 15px;
+                                        .dropdown-item{
+                                            &:hover{
+                                                background-color: $white;
+                                                opacity:.65;
+                                            }
+                                        }
+                                    }
+                                    .row{
+                                        .col-md{
+                                            img{
+                                                object-fit: cover;
+                                                width: 100%;
+                                                padding: 10px;
+                                            }
+                                            .heading{
+                                                text-decoration: none;
+                                                color: $dark_brown;
+                                                font-size: 12px;
+                                                text-transform: uppercase;
+                                                letter-spacing:1px;
+                                                padding: 0 15px;
+                                                font-weight: 600;
+                                                &:hover{
+                                                    opacity: .65;
+                                                }
+                                            }
+                                            .dropdown-mega{
+                                                font-size: 13px;
+                                            }
+                                        }
+                                    }
+                                    .row{
+                                        .col-md-4{
+                                            img{
+                                                width: 100%;
+                                                object-fit: cover;
+                                                padding: 10px 20px 10px 5px;
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .col-md-2{
+                display: flex;
+                justify-content: flex-end;
+                .bi{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

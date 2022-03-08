@@ -1,0 +1,75 @@
+@import "Variable";
+header{
+    background-color: $light_grey;
+    .container{
+        .row{
+            .col-md-4{
+                .header_left{
+                    .left-1{
+                        flex: 0 0  40%;
+                        text-align: center;
+                        padding: 8px 0;
+                        transition: 0.3s all linear;
+                        a{
+                            font-size: 14px;
+                            text-decoration: none;
+                            color: $med_black;
+                        }
+                        &:hover{
+                            background-color: $red;
+                            color: $white;
+                        }
+                        &:hover a{
+                            color: $white;
+                        }
+                    }
+                }
+            }
+            .col-md-8{
+                .header-right{
+                    .droplist{
+                        flex: 0 0 8%;
+                        .navbar{
+                            .nav{
+                                .nav-link{
+                                    color: $black;
+                                    padding:0px;
+                                    font-size:14px;
+                                }
+                                .dropdown-menu{
+                                    right: 5%;
+                                    .dropdown-item{
+                                        font-size: 12px;
+                                        border-bottom: 1px solid $border;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .header-right-cart{
+                        background-color: $red;
+                        color: $white;
+                        padding:3px;
+                        a{
+                            color: $white;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (min-width: 992px) 
+{
+	.navbar .nav-item .dropdown-menu
+    { 
+        display: none; 
+    }
+	.navbar .nav-item:hover .dropdown-menu{ 
+        display: block; 
+    }
+	.navbar .nav-item .dropdown-menu{ 
+        margin-top:0; 
+    }
+}

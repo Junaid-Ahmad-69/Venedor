@@ -1,0 +1,199 @@
+@import "Variable";
+.container{
+    .row{
+        position: relative;
+        .col-md-12{
+            .recomended{
+                text-align: center;
+                margin: 20px 0;
+                h3{
+                    font-size: 25px;
+                    color: $head_black;
+                    margin: 40px 0;
+                }
+            }
+            // .main-slider{
+                .card{
+                    margin: 15px;
+                    cursor: pointer;
+                    &:hover{
+                        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                        filter:brightness(97%); 
+                        z-index: -1;
+                    }
+                    &:hover .buy-button{
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                    .main-image{
+                        position: relative;
+                        img{
+                            filter: brightness(97%);
+                            width: 100%;
+                            object-fit: cover;
+                            height: 270px;
+                            padding: 10px;
+                        }
+                        &:hover .top-image{
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                        .top-image{
+                            filter: brightness(97%);
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            object-fit: cover;
+                            padding: 10px;
+                            width: 100%;
+                            opacity: 0;
+                            height: 270px;
+                            visibility: hidden;
+                        }
+                    }
+                    .card-text{
+                        h5{
+                            color: $grey_light;
+                            font-weight: bold;
+                            font-size: 14px;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                        }
+                        h3{
+                            font-size: 15px;
+                            color: $light_brown;
+                        }
+                    }
+                    .card-desc{
+                        del{
+                            color: $del;
+                        }
+                        span{
+                            font-weight: bold;
+                            color: $red;
+                        }
+                    }
+                    .card-star{
+                        color: $yellow_dark;
+                        font-size: 13px;
+                    }
+                    .buy-button{
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: 0.3s all linear;
+                        .add{
+                            outline: none;
+                            border: none;
+                            background-color: $red;
+                            color:$white;
+                            font-size: 12px;
+                            padding:10px;
+                            width: 100px;
+                            text-transform:uppercase;
+                        }
+                        .view{
+                            outline: none;
+                            border: none;
+                            background-color:transparent;
+                            color:$dark_blue;
+                            font-size: 12px;
+                            padding:8px;
+                            width: 100px;
+                            text-transform:uppercase;
+                            border: 2px solid $black;
+                            transition: 0.2s all linear  ;
+                            &:hover{
+                                border:2px solid $red;
+                                color: $white;
+                                background-color: $red;
+                            }
+                        }
+                    }
+                    .btn-tag{
+                        position: absolute;
+                        top: 4.5%;
+                        right: 20px;
+                        button{
+                            outline:none;
+                            border: none;
+                            padding: 3px 10px;
+                            color: $red;
+                            border:2px solid $red;
+                            font-weight: 600;
+                            font-size: 12px;
+                            background:transparent ;
+                        }
+                    }
+                    #clockdiv-1,
+                    #clockdiv-2,
+                    #clockdiv-3,
+                    #clockdiv-4
+                    {
+                        position: absolute;
+                        top: 38%;
+                        left: 18px;
+                        color: $white;
+                        display: inline-block;
+                        text-align: center;
+                        font-size: 15px;
+                        font-weight: 400;
+                         > div{
+                            padding: 2px;
+                            background-color: $clock;
+                            width: 50px;
+                            height: 50px;
+                            display: inline-block;
+                            > span{
+                                display: inline-block;
+                            }
+                            .smalltext{
+                                font-size: 10px;
+                                text-transform: capitalize;
+                            }
+                        }
+                    }
+                }
+            }            
+        }
+        .arrows{
+            .left-arrow{
+                position: absolute;
+                top: 13%;
+                left: 46%;
+                button{
+                    background: transparent;
+                    outline: none;
+                    border: none;
+                    border: 2px solid $light_smoke;
+                    color: $grey_dark;
+                    width: 40px;
+                    transition:0.3s all linear;
+                    &:hover{
+                        color: $white;
+                        background-color: $red;
+                        border-color:$red;
+                    }
+                }
+            }
+            .right-arrow{
+                position: absolute;
+                top: 13%;
+                left: 51%;
+                button{
+                    background: transparent;
+                    outline: none;
+                    border: none;
+                    border: 2px solid $light_smoke;
+                    color: $grey_dark;
+                    width: 40px;
+                    transition:0.3s all linear;
+                    &:hover{
+                        color: $white;
+                        background-color: $red;
+                        border-color:$red;
+                    }
+                }
+            }   
+        }
+    }
+// }

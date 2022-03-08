@@ -1,0 +1,95 @@
+@import "Variable";
+@import "Mixin";
+.slider{
+    .row{
+        margin: 0;
+        .col-md-12{
+            padding: 0;
+            .carousel-1{
+                .carousel-inner{
+                    .carousel-item{
+                        position: relative;
+                        img{
+                            width: 100%;
+                            height: 500px;
+                            object-fit: cover;
+                        }
+                        .carousel-text{
+                            position: absolute;
+                            right:32%;
+                            top:50%;
+                            transform: translate(50%, -50%);
+                            .head-1{
+                                h3{
+                                    font-size: 24px;
+                                }
+                            }
+                            .head-2{
+                                h2{
+                                    font-size: 52px;
+                                    color: $white;
+                                    text-transform: uppercase;
+                                    font-weight: bold;
+                                }
+                            }
+                            .head-3{
+                                padding:10px 0;
+                                h5{
+                                    font-size: 16px;
+                                    color: $white;
+                                }
+                            }
+                            .head-4{
+                                padding:5px 0;
+                                .head-4-1{
+                                    span{
+                                        font-size: 42px;
+                                        color: $white;
+                                        font-weight: bold;
+                                    }
+                                }
+                                .head-4-2{
+                                    padding: 10px 0;
+                                    del{
+                                        font-size: 28px;
+                                    }
+                                }
+                            }
+                           .head-5{
+                               padding: 5px 0;
+                               .head-5-1{
+                                   button{
+                                    @include button;
+                                    background-color: $dark_blue;
+                                    transition:0.2s all linear ;
+                                    font-weight: bold;
+                                    letter-spacing: 1px;
+                                    height: 45px;
+                                    &:hover{
+                                        color: $white;
+                                        background-color: $red;
+                                        }
+                                   }
+                               }
+                               .head-5-2{
+                                   button{
+                                       @include button;
+                                       border: 2px solid $white;
+                                       transition:0.2s all linear ;
+                                       font-weight: bold;
+                                       letter-spacing: 1px;
+                                    &:hover{
+                                        color: $white;
+                                        background-color: $red;
+                                        border: 2px solid $red;
+                                        }
+                                    }
+                               }
+                           }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

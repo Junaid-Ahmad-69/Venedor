@@ -1,0 +1,111 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "TopHeader";
+@import "NavBar";
+@import "Variable";
+@import "MainCarosuel";
+@import "Extra";
+@import "Recommended";
+@import "FeatureBanner";
+@import "ShopBy";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+#main-width{
+    width: 200px;
+}
+#main-width-2{
+    width:1100px;
+    position: absolute;
+    transform: translate(-35%);
+}
+#main-width-3{
+    width:1100px;
+    position: absolute;
+    transform: translate(-45%);
+}
+.badge-col{
+    background-color:$yellow;
+    color: $white;
+    position: absolute;
+    top: -5px;
+    padding: 1px;
+    right: -3px;
+    border-radius: 0px;
+text-transform: capitalize;
+}
+.badge-col-1{
+    background-color:$yellow;
+    color: $white;
+    position: absolute;
+    top: -2px;
+    padding: 1px;
+    right: 70px;
+    border-radius: 0px;
+    text-transform: capitalize;
+}
+.badge-col-2{
+    background-color:$red;
+    color: $white;
+    position: absolute;
+    top: 2px;
+    padding: 1px;
+    right: 85px;
+    border-radius: 0px;
+    text-transform: capitalize;
+}
+.badge-col-3{
+    background-color:$red;
+    color: $white;
+    position: absolute;
+    top: 2px;
+    padding: 1px;
+    right:100px;
+    border-radius: 0px;
+    text-transform: capitalize;
+}
+.badge-col-4{
+    background-color:$red;
+    color: $white;
+    position: absolute;
+    top: 2px;
+    padding: 1px;
+    right:65px;
+    border-radius: 0px;
+    text-transform: capitalize;
+}
+.badge-col-5{
+    background-color:$red;
+    color: $white;
+    position: absolute;
+    top: 2px;
+    padding: 1px;
+    right:95px;
+    border-radius: 0px;
+    text-transform: capitalize;
+}
+.badge-col-6{
+    background-color:$yellow;
+    color: $white;
+    position: absolute;
+    top: 2px;
+    padding: 1px;
+    right:95px;
+    border-radius: 0px;
+    text-transform: capitalize;
+}
+#set-head{
+    letter-spacing: 2px;
+}
+.new{
+    color: $white;
+}
+.new-2{
+    color: $light_blue;
+}
+#current{
+    color: $current_price;
+}
