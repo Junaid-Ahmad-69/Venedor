@@ -7,7 +7,11 @@
 @import "Recommended";
 @import "FeatureBanner";
 @import "ShopBy";
-
+@import "navtabs";
+@import "banner";
+@import "latest";
+@import "oldguy";
+@import "latestNews";
 *{
     margin: 0;
     padding: 0;
@@ -108,4 +112,17 @@ text-transform: capitalize;
 }
 #current{
     color: $current_price;
+}
+#cal{
+    color: $red !important;
+}
+#bt-1{
+    border: 2px solid $dark_black !important;
+    background-color: $white;
+    color: $black !important;
+    text-transform:uppercase;
+    width: 70px !important;
+}
+.cal-1{
+    color: $current_price !important;
 }

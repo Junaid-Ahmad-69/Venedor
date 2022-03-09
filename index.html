@@ -19,11 +19,11 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <!-- Stylesheet Link -->
-    <link rel="stylesheet" href="/css/theme.css">
     <!-- slick-carousel -->
     <link rel="stylesheet" href="/node_modules/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="/node_modules/slick-carousel/slick/slick-theme.css">
+    <!-- Stylesheet Link -->
+    <link rel="stylesheet" href="/css/theme.css">
 </head>
 <body>
     <header>
@@ -860,37 +860,1365 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <ul class="nav nav-tab">
-                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#sound">Sound Player</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#access">Accessories</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#electronic">Electroincs</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#phone">Phone</a></li>
-                  </ul>
-                  <div class="tab-content">
-                    <div id="sound" class="tab-pane active">
-                      <h3>HOME</h3>
-                      <p>Some content.</p>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="sound-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Sound</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="access-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"> <span>/</span> Accessories</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="electric-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false"><span>/</span> Electronics</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="phone-tab" data-bs-toggle="tab" data-bs-target="#phone" type="button" role="tab" aria-controls="contact" aria-selected="false"> <span>/</span> Phones</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="s-cont">
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/s1.jpg" alt="sound">
+                                    <img class="top_2" src="/images/s2.jpg" alt="sound">
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>Mauris</h5>
+                                        <p>Ultra-Budget Portable Bluetooth Speaker</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <span>$89.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/s3.jpg" alt="sound">
+                                    <img class="top_2" src="/images/s4.jpg" alt="sound">
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>Marius</h5>
+                                        <p>Portable Wireless Bluetooth Outdoor Music Player</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <span>$160.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/s5.jpg" alt="sound">
+                                    <img class="top_2" src="/images/s6.jpg" alt="sound">
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>Ipsum</h5>
+                                        <p>Quality Music Player - Default Layout 2</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <del>1,20.00</del>
+                                        <span id="cal">$890.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                        <img class="top_1 " src="/images/s7.jpg" alt="sound" width="165px";
+                                        height="208px";>
+                                        <img class="top_2" src="/images/s8.jpg" alt="sound"  width="203px";
+                                        height="208px";>
+                                        <div class="icons">
+                                            <button><i class="bi bi-search-heart"></i></button>
+                                            <button><i class="bi bi-cart"></i></button>
+                                            <button><i class="bi bi-suit-heart"></i></button>
+                                        </div>
+                                        <div class="s-desc">
+                                        <h5>Ipsum</h5>
+                                        <p>Best Outdoor Portable Sound Player</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <span>$139.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/s9.jpg" alt="sound" width="203px";
+                                    height="208px";>
+                                    <img class="top_2" src="/images/s10.jpg" alt="sound" width="203px";
+                                    height="208px";>
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>Faucibus</h5>
+                                        <p>LG Tone Free HBS Earphone Wireless</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <span>$180.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/s11.jpg" alt="sound" width="203px";
+                                    height="208px";>
+                                    <img class="top_2" src="/images/s12.jpg" alt="sound" width="203px";
+                                    height="208px";>
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>Faucibus</h5>
+                                        <p>2 Way Portable Speaker Best Home Approach</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <span>$240.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/s13.jpg" alt="sound" width="203px";
+                                    height="208px";>
+                                    <img class="top_2" src="/images/s14.jpg" alt="sound" width="203px";
+                                    height="208px";>
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>faciubus</h5>
+                                        <p>Wireless Curve Computer Headset Gentle</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <span>$139.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/s15.jpg" alt="sound" width="203px";
+                                    height="208px";>
+                                    <img class="top_2" src="/images/s16.jpg" alt="sound" width="203px";
+                                    height="208px";>
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>Faucibus</h5>
+                                        <p>New Noise Cancelling Headset OOWE</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <span>$139.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/s17.jpg" alt="sound" width="203px";
+                                    height="208px";>
+                                    <img class="top_2" src="/images/s18.jpg" alt="sound" width="203px";
+                                    height="208px";>
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>Ipsum</h5>
+                                        <p>Hot Selling Twins Touch Earphone Port3 Serie</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <del>$190.00</del>
+                                        <span id="cal">$1070.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/s19.jpg" alt="sound">
+                                    <img class="top_2" src="/images/s20.jpg" alt="sound">
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>placerat</h5>
+                                        <p>Stereo Wireless Headset For Xbox Microphone</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <span>$120.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div id="access" class="tab-pane fade show">
-                      <h3>Menu 1</h3>
-                      <p>Some content in menu 1.</p>
+                    <!-- Accessories Tabs  -->
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="s-cont">
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/a1.webp" alt="sound">
+                                    <img class="top_2" src="/images/a2.webp" alt="sound">
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>Ipsum</h5>
+                                        <p>CANON EOS 77D DSLR Camera Sensor Photo</p>
+                                    </div>
+                                    <div class="less">
+                                        <button>-16%</button>
+                                    </div>
+                                    <div class="s-price">
+                                        <del>$2,900</del>
+                                        <span id="cal">$2,499</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/a3.webp" alt="sound">
+                                    <img class="top_2" src="/images/a4.webp" alt="sound">
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>placerat</h5>
+                                        <p>Superzoom Travel Cameras Fixed P90</p>
+                                    </div>
+                                    <div class="less">
+                                        <button>-18%</button>
+                                    </div>
+                                    <div class="s-price">
+                                        <del>$500.00</del>
+                                        <span id="cal">$410.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/a5.webp" alt="sound">
+                                    <img class="top_2" src="/images/a6.webp" alt="sound">
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>Mauris</h5>
+                                        <p>Ultra-Budget Portable Bluetooth Speaker</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <span id="cal">$89.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                        <img class="top_1 " src="/images/a7.webp" alt="sound" width="165px";
+                                        height="208px";>
+                                        <img class="top_2" src="/images/a8.webp" alt="sound"  width="203px";
+                                        height="208px";>
+                                        <div class="icons">
+                                            <button><i class="bi bi-search-heart"></i></button>
+                                            <button><i class="bi bi-cart"></i></button>
+                                            <button><i class="bi bi-suit-heart"></i></button>
+                                        </div>
+                                        <div class="s-desc">
+                                        <h5>Ipsum</h5>
+                                        <p>Standard Zoom Mini Hidden Wireless IPCamera</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <span>$150.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/a9.webp" alt="sound" width="203px";
+                                    height="208px";>
+                                    <img class="top_2" src="/images/a10.webp" alt="sound" width="203px";
+                                    height="208px";>
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>Placerat</h5>
+                                        <p>White Touch Sensitive Wireless Magic Mouse</p>
+                                    </div>
+                                    <div class="less">
+                                        <button id="bt-1">Sold out</button>
+                                    </div>
+                                    <div class="s-price">
+                                        <span>$42.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/a11.webp" alt="sound" width="203px";
+                                    height="208px";>
+                                    <img class="top_2" src="/images/a12.webp" alt="sound" width="203px";
+                                    height="208px";>
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>Mauris</h5>
+                                        <p>Optical Flow Smart Follow Me Foldable Drone</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <span>$240.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/a13.webp" alt="sound" width="203px";
+                                    height="208px";>
+                                    <img class="top_2" src="/images/a14.webp" alt="sound" width="203px";
+                                    height="208px";>
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>faciubus</h5>
+                                        <p>Dual Mode Mouse 2.4Ghz Wireless Plus</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <span>$29.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/a15.webp" alt="sound" width="203px";
+                                    height="208px";>
+                                    <img class="top_2" src="/images/a16.webp" alt="sound" width="203px";
+                                    height="208px";>
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>Mauris</h5>
+                                        <p>Tablet Quad Core Android Video Streaming</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <span>$99.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/a17.webp" alt="sound" width="203px";
+                                    height="208px";>
+                                    <img class="top_2" src="/images/a18.webp" alt="sound" width="203px";
+                                    height="208px";>
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>Faucibus</h5>
+                                        <p>LG Tone Free HBS Earphone Wireless</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <span >$180.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/a19.webp" alt="sound"   width="203px";
+                                    height="208px";>
+                                    <img class="top_2" src="/images/a20.webp" alt="sound"   width="203px";
+                                    height="208px";>
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>placerat</h5>
+                                        <p>Inteligentes Smartwatch - Sticky Form Layout</p>
+                                    </div>
+                                    <div class="less">
+                                        <button>-40%</button>
+                                    </div>
+                                    <div class="s-price">
+                                        <del>$500.00</del>
+                                        <span id="cal">$399.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div id="electronic" class="tab-pane fade show">
-                      <h3>Menu 2</h3>
-                      <p>Some content in menu 2.</p>
+                    <!-- electric-tab -->
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="s-cont">
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/vr-box-1.jpg" alt="sound">
+                                    <img class="top_2" src="/images/vr-box-2.jpg" alt="sound">
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>Faucibus</h5>
+                                        <p>Factory Private Model VR BOX-2 Virtual Reality</p>
+                                    </div>
+                                    <div class="less">
+                                        <button>-13%</button>
+                                    </div>
+                                    <div class="s-price">
+                                        <del>$1500</del>
+                                        <span id="cal">$1300</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/dsle-1.jpg" alt="sound">
+                                    <img class="top_2" src="/images/dslr-2.jpg" alt="sound">
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>Mauris</h5>
+                                        <p>Full Frame 50mm F1.4 Dslr Camera Portrait</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <span>$699.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/laptop-1.jpg" alt="sound">
+                                    <img class="top_2" src="/images/laptop-2.jpg" alt="sound">
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>ipsum</h5>
+                                        <p>Best Price New Ultra Thin 15.6 Inch Mini PC Laptop</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <del>$88.00</del>
+                                        <span id="cal">$70.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                        <img class="top_1 " src="/images/a15.webp" alt="sound" width="165px";
+                                        height="208px";>
+                                        <img class="top_2" src="/images/a16.webp" alt="sound"  width="203px";
+                                        height="208px";>
+                                        <div class="icons">
+                                            <button><i class="bi bi-search-heart"></i></button>
+                                            <button><i class="bi bi-cart"></i></button>
+                                            <button><i class="bi bi-suit-heart"></i></button>
+                                        </div>
+                                        <div class="s-desc">
+                                        <h5>Mauris</h5>
+                                        <p>Tablet Quad Core Android Video Streaming</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <span>$99.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/faciubus-1.jpg" alt="sound" width="203px";
+                                    height="208px";>
+                                    <img class="top_2" src="/images/faciubus-2.jpg" alt="sound" width="203px";
+                                    height="208px";>
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>faucius</h5>
+                                        <p>All in One Mega Pixel Wide Display</p>
+                                    </div>
+                                    <div class="less">
+                                        <button>-12%</button>
+                                    </div>
+                                    <div class="s-price">
+                                        <del>$99.00</del>
+                                        <span id="cal">$87.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/ipsum-1.jpg" alt="sound" width="203px";
+                                    height="208px";>
+                                    <img class="top_2" src="/images/ipsum-2.jpg" alt="sound" width="203px";
+                                    height="208px";>
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="less">
+                                        <button>-20%</button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>Ipsum</h5>
+                                        <p>Compact Camera Digital With 2.7TFT Display Cam</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <del>$150.00</del>
+                                        <span id="cal">$120.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/watch-1.jpg" alt="sound" width="203px";
+                                    height="208px";>
+                                    <img class="top_2" src="/images/watch-2.jpg" alt="sound" width="203px";
+                                    height="208px";>
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>Ipsum</h5>
+                                        <p>Watch Series Sport Band - GPS Ready Best</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <span>$450.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/placert-1.jpg" alt="sound" width="203px";
+                                    height="208px";>
+                                    <img class="top_2" src="/images/placert-2.jpg" alt="sound" width="203px";
+                                    height="208px";>
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>Placerat</h5>
+                                        <p>Super Pixel Explosion Proof Digital Camera</p>
+                                    </div>
+                                    <div class="less">
+                                        <button>-13%</button>
+                                    </div>
+                                    <div class="s-price">
+                                        <del>$150.00</del>
+                                        <span id="cal">$130.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fil"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/printer-1.jpg" alt="sound" width="203px";
+                                    height="208px";>
+                                    <img class="top_2" src="/images/printer-2.jpg" alt="sound" width="203px";
+                                    height="208px";>
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>Faucibus</h5>
+                                        <p>All in One High efficiency Adhesive Printer</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <span >$412.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/s9.jpg" alt="sound"   width="203px";
+                                    height="208px";>
+                                    <img class="top_2" src="/images/s10.jpg" alt="sound"   width="203px";
+                                    height="208px";>
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>Faucibus</h5>
+                                        <p>LG Tone Free HBS Earphone Wireless</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <span>$180.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div id="phone" class="tab-pane fade show">
-                        <h3>Menu 2</h3>
-                        <p>Some content in menu 2.</p>
-                      </div>
-                  </div>
+                    <!-- phone-tab -->
+                    <div class="tab-pane fade" id="phone" role="tabpanel" aria-labelledby="phone-tab">
+                        <div class="s-cont">
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/p1.webp" alt="sound">
+                                    <img class="top_2" src="/images/p2.webp" alt="sound">
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>Placerat</h5>
+                                        <p>3G Cheap Windows Smartphone OS</p>
+                                    </div>
+                                    <div class="less">
+                                        <button>-12%</button>
+                                    </div>
+                                    <div class="s-price">
+                                        <del>$1590</del>
+                                        <span id="cal">$1390</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/p3.webp" alt="sound"  width="203px";
+                                    height="265px";>
+                                    <img class="top_2" src="/images/p4.webp" alt="sound"  width="203px";
+                                    height="265px";>
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>Ipsum</h5>
+                                        <p>Excellent Flagship Smartphone Triple Cameras</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <span>$380.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/p5.webp" alt="sound">
+                                    <img class="top_2" src="/images/p6.webp" alt="sound">
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>faucius</h5>
+                                        <p>Dual SIM Factory Manufactured Phone</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <span >$129.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                        <img class="top_1 " src="/images/p7.webp" alt="sound" width="165px";
+                                        height="265px";>
+                                        <img class="top_2" src="/images/p8.webp" alt="sound"  width="203px";
+                                        height="265px";>
+                                        <div class="icons">
+                                            <button><i class="bi bi-search-heart"></i></button>
+                                            <button><i class="bi bi-cart"></i></button>
+                                            <button><i class="bi bi-suit-heart"></i></button>
+                                        </div>
+                                        <div class="s-desc">
+                                        <h5>Mauris</h5>
+                                        <p>Camera Touch Flash Android OS Mobile</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <span>$139.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/p9.webp" alt="sound" width="203px";
+                                    height="265px";>
+                                    <img class="top_2" src="/images/p10.webp" alt="sound" width="203px";
+                                    height="265px";>
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>faucius</h5>
+                                        <p>Factory Direct Sale Tablet Android Touch</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <span >$139.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/p11.webp" alt="sound" width="203px";
+                                    height="265px";>
+                                    <img class="top_2" src="/images/p12.webp" alt="sound" width="203px";
+                                    height="265px";>
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>Mauris</h5>
+                                        <p>Tablet Quad Core Android Video Streaming</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <span>$99.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/p13.webp" alt="sound" width="203px";
+                                    height="265px";>
+                                    <img class="top_2" src="/images/p14.webp" alt="sound" width="203px";
+                                    height="265px";>
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>Mauris</h5>
+                                        <p>New Hot Samsung Android 10.0 Tablet</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <span>$139.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-contnt_main">
+                                <div class="holder">
+                                    <img class="top_1" src="/images/p15.webp" alt="sound" width="203px";
+                                    height="265px";>
+                                    <img class="top_2" src="/images/p16.webp" alt="sound" width="203px";
+                                    height="265px";>
+                                    <div class="icons">
+                                        <button><i class="bi bi-search-heart"></i></button>
+                                        <button><i class="bi bi-cart"></i></button>
+                                        <button><i class="bi bi-suit-heart"></i></button>
+                                    </div>
+                                    <div class="s-desc">
+                                        <h5>Mauris</h5>
+                                        <p>Ultimate Mac Hybrid Laptop 2020 Model</p>
+                                    </div>
+                                    <div class="s-price">
+                                        <span >$1,240.00</span>
+                                        <div class="s-rate">
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner Section -->
+    <div class="ban">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="holder-banner">
+                    <img src="/images/t1.jpg" alt="banner">
+                    <button id="bt_1"> <em>from</em>  <br> $<span>125</span> </button>
+                    <div class="every">
+                        <h2>Everything <br> Becomes Wow </h2>
+                    <span class="money ">Starting at <span>$640.00</span> </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="holder-banner">
+                    <img src="/images/t2.jpg" alt="banner">
+                    <div class="intell">
+                        <h2>Intelligent <br> User Interface </h2>
+                        <span class="money_2">Starting at <span>$520.00</span> </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="holder-banner">
+                    <img src="/images/t3.jpg" alt="banner">
+                    <div class="intell_3">
+                        <span>New Arrivals</span>
+                        <h2>Discover <br> Great Deals</h2>
+                        <a href="#">Discover ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="holder-banner">
+                    <img src="/images/t4.jpg" alt="banner">
+                    <div class="intell_2">
+                        <span>Extra 25% off &</span>
+                        <h2> Free Delivery<br> Until March </h2>
+                        <a href="#">Read More ></a>
+                    </div>
+                    <button id="bt_of"> <em>up to</em>  <br><span>25%</span> </button>
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- Latest Deal -->
+    <div class="container">
+        <div class="latest">
+            <h3>Latest Deal</h3>
+            <p>Unique items from vanguard designers.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="card-holder">
+                            <img  class="top-3" src="/images/ipsum-1.jpg" alt="camera">
+                            <img  class="top-4" src="/images/ipsum-2.jpg" alt="camera">
+                            <button class="off">-20%</button>
+                            <div class="icons">
+                                <button><i class="bi bi-search-heart"></i></button>
+                                <button><i class="bi bi-cart"></i></button>
+                                <button><i class="bi bi-suit-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h5>Ipsum</h5>
+                            <p>Compact Camera Digital With 2.7TFT Display Cam</p>
+                            <div class="card-price">
+                                <span>$120.00</span> <del>$150.00</del>
+                            </div>
+                            <div class="card-rate">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-main">
+                        <div class="card-holder">
+                            <img  class="top-3" src="/images/placert-1.jpg" alt="camera">
+                            <img  class="top-4" src="/images/placert-2.jpg" alt="camera">
+                            <button class="off">-13%</button>
+                            <div class="icons">
+                                <button><i class="bi bi-search-heart"></i></button>
+                                <button><i class="bi bi-cart"></i></button>
+                                <button><i class="bi bi-suit-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h5>Placerat</h5>
+                            <p>Super Pixel Explosion Proof Digital Camera</p>
+                            <div class="card-price">
+                                <span>$1300.00</span> <del>$1500.00</del>
+                            </div>
+                            <div class="card-rate">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-main">
+                        <div class="card-holder">
+                            <img  class="top-3" src="/images/a7.webp" alt="camera">
+                            <img  class="top-4" src="/images/a8.webp" alt="camera">
+                            <div class="icons">
+                                <button><i class="bi bi-search-heart"></i></button>
+                                <button><i class="bi bi-cart"></i></button>
+                                <button><i class="bi bi-suit-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h5>Ipsum</h5>
+                            <p>Standard Zoom Mini Hidden Wireless IPCamera</p>
+                            <div class="card-price">
+                                <span class="cal-1">$150.00</span>
+                            </div>
+                            <div class="card-rate">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-main_1">
+                        <div class="card-holder_1">
+                            <img  class="top-3" src="/images/d1.webp" alt="camera">
+                            <img  class="top-4" src="/images/d2.webp" alt="camera">
+                            <div class="icons_1">
+                                <button><i class="bi bi-search-heart"></i></button>
+                                <button><i class="bi bi-cart"></i></button>
+                                <button><i class="bi bi-suit-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-content_1">
+                            <h5>Faucibus</h5>
+                            <p>Digital Camera 24-70mm F/4 S Zoom</p>
+                            <div class="card-price_1">
+                                <del>$460.00</del>
+                                <span class="cal">$450.00</span>
+                            </div>
+                            <div class="card-rate_1">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mainBanner OneStep -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="main-holder">
+                <img src="/images//paralla.jpeg" alt="parallel">
+                <div class="hol-content">
+                    <h3>Ready to explore</h3>
+                    <h1>One Step <br> Ahead.</h1>
+                    <p>Find the full range of mobile smartphones,
+                        <br>SmartWear & accessories in our...
+                    </p>
+                    <button>Read more</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- latestNew Sliders -->
+    <div class="container">
+        <div class="row">
+            <div class="late">
+                <h3>Latest News</h3>
+            </div>
+            <div class="col-md-12">
+                <div class="slider-slide">
+                    <div class="move ">
+                        <img src="/images/l1.webp" alt="laptop">
+                    </div>
+                    <div class="conte">
+                        <h4>Etiam laoreet sem eget  eros rhoncus.</h4>
+                        <p> Nullam venenatis ipsum lobortis nulla rhoncus vulputate. Phasellus semper blandit molestie. Morbi auctor nisi ac.</p>
+                        <button>Read more</button>
+                    </div>
+                    <div class="move ">
+                        <img src="/images/l2.webp" alt="laptop">
+                    </div>
+                    <div class="conte">
+                        <h4>Nunc egestas nisi et diam.</h4>
+                        <p> Duis et neque ac purus ultrices vulputate sit amet nec sem. Proin non tempor nulla. Fusce purus ligula, sit </p>
+                        <button>Read more</button>
+                    </div>
+                    <div class="move ">
+                        <img src="/images/l3.webp" alt="laptop">
+                    </div>
+                    <div class="conte">
+                        <h4>Lobortis nulla rhoncus vulputate</h4>
+                        <p> Aiquam mauris libero, suscipit sed ornare, suscipit non felis. Fusce sit amet orci justo, ultrices urna. </p>
+                        <button>Read more</button>
+                    </div>
+                </div>
+                <div class="ar">
+                    <div class="rigt">
+                        <button><i class="bi bi-chevron-right"></i></button>
+                    </div>
+                    <div class="let">
+                        <button><i class="bi bi-chevron-left"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Manufactured -->
+    <div class="container">
+        <div class="row">
+            <div class="late">
+                <h3>Manufacturers</h3>
+            </div>
+            <div class="col-md-12">
+                <div class="slider-slide_2 my-5">
+                    <div class="move ">
+                        <img src="/images/m1.webp" alt="laptop">
+                    </div>
+                    <div class="move ">
+                        <img src="/images/m2.webp" alt="laptop">
+                    </div>
+                    <div class="move ">
+                        <img src="/images/m3.webp" alt="laptop">
+                    </div>
+                    <div class="move ">
+                        <img src="/images/m4.webp" alt="laptop">
+                    </div>
+                    <div class="move ">
+                        <img src="/images/m5.webp" alt="laptop">
+                    </div>
+                    <div class="move ">
+                        <img src="/images/m6.webp" alt="laptop">
+                    </div>
+                    <div class="move ">
+                        <img src="/images/m7.webp" alt="laptop">
+                    </div>
+                    <div class="move ">
+                        <img src="/images/m8.webp" alt="laptop">
+                    </div>
+                </div>
+                <div class="ar">
+                    <div class="rigt_last">
+                        <button><i class="bi bi-chevron-right"></i></button>
+                    </div>
+                    <div class="let_last">
+                        <button><i class="bi bi-chevron-left"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
+<div class="container">
+    <h4 style="margin:100px 0 ;">skgsj gsjgsj gc</h4>
+</div>
 
 
 

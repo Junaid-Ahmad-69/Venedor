@@ -1,0 +1,224 @@
+.container{
+    .latest{
+        text-align: center;
+        margin-bottom: 60px;
+        h3{
+            font-size: 30px;
+            color: $late;
+        }
+        p{
+            font-size:16px;
+            color: $late2;
+        }
+    }
+    .row{
+        .col-md-6{
+            .card{
+                margin: 15px 0;
+                border-radius:0px ;
+                .card-main{
+                    display: grid;
+                    grid-template-columns: repeat(2,280px 270px);
+                    &:hover .icons{
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                    .card-holder{
+                        padding: 10px;
+                        filter: brightness(97%);
+                        position: relative;
+                        &:hover .top-4{
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                        .top-3{
+                            position: relative;
+                            width: 80%;
+                            object-fit: cover;
+                        }
+                        .top-4{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 80%;
+                            object-fit: cover;
+                            padding: 10px;
+                            visibility: hidden;
+                            opacity: 0;
+                            transition: all 0.3s linear;
+                        }
+                        .off{
+                            position: absolute;
+                            top: 25px;
+                            right: 80px;
+                            outline: none;
+                            border: none;
+                            background-color: $white;
+                            color: $red;
+                            padding: 2px 8px;
+                            font-size: 12px;
+                            border: 2px solid $red;
+                        }
+                    }
+                    .icons{
+                        position: absolute;
+                        top: 15px;
+                        left: 17px;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: all 0.3s linear;
+                        button{
+                            outline: none;
+                            border: none;
+                            background-color: $mar;
+                            padding: 10px;
+                            margin: 10px 0;
+                            color: $white;
+                            display: block;
+                            width: 40px;
+                            &:hover{
+                                color: $white;
+                                background-color: $red;
+                            }
+                        }
+                    }
+                    .card-content{
+                        margin:30px 0;
+                        line-height: 20px;
+                        h5{
+                            font-size: 16px;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            color: $grey_light;
+                            margin: 10px 0;
+                        }
+                        p{
+                            font-size: 15px;
+                            color: $dark_black;
+                        }
+                        .card-price{
+                            margin: 10px 0;
+                            span{
+                                color: $red_pure;
+                                font-weight: bold;
+                                font-size: 18px;
+                                padding: 2px;
+                            }
+                            del{
+                                color: $del;
+                                font-size: 15px;
+                            }
+                        }
+                        .card-rate{
+                            font-size: 15px;
+                            color: $yellow_dark;
+                        }
+                    }
+                }
+            }
+        }
+        .col-md-6{
+            .card{
+                margin: 15px 0;
+                border-radius:0px ;
+                .card-main_1{
+                    &:hover .icons_1{
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                    .card-holder_1{
+                        padding: 20px;
+                        filter: brightness(97%);
+                        position: relative;
+                        &:hover .top-4{
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                        .top-3{
+                            position: relative;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                        .top-4{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            object-fit: cover;
+                            padding: 10px;
+                            visibility: hidden;
+                            opacity: 0;
+                            transition: all 0.3s linear;
+                        }
+                        .off{
+                            position: absolute;
+                            top: 25px;
+                            right: 80px;
+                            outline: none;
+                            border: none;
+                            background-color: $white;
+                            color: $red;
+                            padding: 2px 8px;
+                            font-size: 12px;
+                            border: 2px solid $red;
+                        }
+                    }
+                    .icons_1{
+                        position: absolute;
+                        top: 15px;
+                        left: 17px;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: all 0.3s linear;
+                        button{
+                            outline: none;
+                            border: none;
+                            background-color: $mar;
+                            padding: 10px;
+                            margin: 10px 0;
+                            color: $white;
+                            display: block;
+                            width: 40px;
+                            &:hover{
+                                color: $white;
+                                background-color: $red;
+                            }
+                        }
+                    }
+                    .card-content_1{
+                        margin:30px;
+                        line-height: 20px;
+                        h5{
+                            font-size: 16px;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            color: $grey_light;
+                            margin: 10px 0;
+                        }
+                        p{
+                            font-size: 15px;
+                            color: $dark_black;
+                        }
+                        .card-price_1{  
+                            margin: 10px 0;
+                            span{
+                                color: $red_pure;
+                                font-weight: bold;
+                                font-size: 18px;
+                                padding: 2px;
+                            }
+                            del{
+                                color: $del;
+                                font-size: 15px;
+                            }
+                        }
+                        .card-rate_1{
+                            font-size: 15px;
+                            color: $yellow_dark;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

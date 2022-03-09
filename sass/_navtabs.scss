@@ -1,0 +1,135 @@
+.container{
+    .row{
+        .col-md-12{
+            .nav-tabs{
+                justify-content: center;
+                border:none;
+                .nav-item{
+                    .nav-link{
+                        outline: none;
+                        border: none;
+                        background-color: transparent;
+                        color: $navtabs;
+                        font-size: 24px;
+                        span{
+                            margin: 0 20px 0 0;
+                            color: $sp;
+                        }
+                    }
+                }
+            }
+            .tab-content{
+                #home,
+                #profile,
+                #contact,
+                #phone{
+                    .s-cont{
+                        display: grid;
+                        grid-template-columns: repeat(5,1fr);
+                        grid-gap: 20px;
+                        .s-contnt_main{
+                            margin: 20px 0;
+                            .holder{
+                                filter: brightness(97%);
+                                &:hover .top_2{
+                                    visibility: visible;
+                                    opacity: 1;
+                                }
+                                &:hover .icons{
+                                    visibility: visible;
+                                    opacity: 1;
+                                }
+                                .top_1{
+                                    position: relative;
+                                    width: 100%;
+                                    object-fit: cover;
+                                }
+                                .top_2{
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    visibility: hidden;
+                                    width: 100%;
+                                    object-fit: cover;
+                                    opacity: 0;
+                                    transition: all 0.3s linear;
+                                }
+                                .icons{
+                                    position: absolute;
+                                    top: 15px;
+                                    left: 17px;
+                                    visibility: hidden;
+                                    opacity: 0;
+                                    button{
+                                        outline: none;
+                                        border: none;
+                                        background-color: $mar;
+                                        padding: 10px;
+                                        margin: 10px 0;
+                                        color: $white;
+                                        display: block;
+                                        width: 40px;
+                                        transition: all 0.2s linear;
+                                        &:hover{
+                                            color: $white;
+                                            background-color: $red;
+                                        }
+                                    }
+                                }
+                                .less{
+                                    position: absolute;
+                                    top: 10px;
+                                    right: 10px;
+                                    button{
+                                        outline: none;
+                                        border: none;
+                                        border:2px solid $red;
+                                        padding: 1px;
+                                        width: 50px;
+                                        font-size: 13px;
+                                        font-weight: 500;
+                                        color: $red;
+                                        background: transparent;
+                                    }
+                                }
+                                .s-desc{
+                                    margin: 10px 0;
+                                    h5{
+                                        color: $grey_light;
+                                        padding: 4px 0;
+                                        font-size: 16px;
+                                        font-weight: bold;
+                                        letter-spacing: 1;
+                                        text-transform: uppercase;
+                                    }
+                                    p{
+                                        font-size: 14px;
+                                        color: $mar;
+                                    }
+                                }
+                                .s-price{
+                                    display: flex;
+                                    del{
+                                        font-size: 10px;
+                                        padding-top: 2px;
+                                        color:$del;
+                                    }
+                                    span{
+                                        color: $current_price;
+                                        font-size: 14px;
+                                        flex:  0 0 40%;
+                                        font-weight: bold;
+                                    }
+                                    .s-rate{
+                                        color: $yellow_dark;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

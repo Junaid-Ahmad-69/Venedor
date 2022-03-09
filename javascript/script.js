@@ -237,3 +237,27 @@ $(document).ready(function(){
             initializeClock('clockdiv-4', deadline);
             ('clockdiv-4', deadline);
       });
+      $(document).ready(function(){        
+      $('.slider-slide').slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 2,
+      dots:false,
+      arrows:true,
+      nextArrow:".rigt",
+      prevArrow:".let",
+    });
+  });
+  $(document).ready(function(){        
+    $('.slider-slide_2').slick({
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay:true,
+    autoplaySpeed:2000,
+    dots:false,
+    arrows:true,
+    nextArrow:".rigt_last",
+    prevArrow:".let_last",
+  });
+});

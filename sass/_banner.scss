@@ -1,0 +1,118 @@
+.ban{
+    margin: 8% 0;
+    .row{
+        margin: 0;
+        padding: 0;
+        .col-md-6{
+            margin: 0;
+            padding: 0;
+            .holder-banner{
+                position: relative;
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                }
+                .intell_2{
+                    position: absolute;
+                    top: 40px;
+                    left: 70px;
+                    a{
+                        color: $dark_black;
+                        text-decoration: none;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+                }
+                #bt_of{
+                    outline: none;
+                    border: none;
+                    border-radius: 50%;
+                    background-color: $red;
+                    color: $white;
+                    position: absolute;
+                    right: 40px;
+                    top: 40px;
+                    width: 100px;
+                    height: 100px;
+                    em{
+                        font-size: 16px;
+                    }
+                    span{
+                        font-size: 28px;
+                        font-weight: 600;
+                    }
+                }
+                .intell_3{
+                    position: absolute;
+                    top: 40px;
+                    right: 170px;
+                    color: $white;
+                    h2{
+                        font-size: 35px;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: $white;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+                }
+                .intell{
+                    position: absolute;
+                    top: 40px; 
+                    left:70px;
+                    h2{
+                        color: $white;
+                        margin-bottom: 10px;
+                    }
+                    .money_2{
+                        color: $white;
+                        font-size: 15px;
+                    }
+                    span{
+                        font-size:28px;
+                        font-weight: bold;
+                    }
+                }
+                #bt_1{
+                    outline: none;
+                    border: none;
+                    border-radius: 50%;
+                    background-color: $current_price;
+                    color: $white;
+                    position: absolute;
+                    top: 30px;
+                    left: 110px;
+                    width: 100px;
+                    height: 100px;
+                    em{
+                        font-size: 16px;
+                    }
+                    span{
+                        font-size: 28px;
+                        font-weight: 600;
+                    }
+                }
+                .every{
+                    position: absolute;
+                    right:130px;
+                    top: 40px;
+                    h2{
+                        font-size: 35px;
+                    }
+                    .money{
+                        color: $start;
+                        font-size: 15px;
+                        span{
+                            color: $blu;
+                            font-weight: bold;
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
