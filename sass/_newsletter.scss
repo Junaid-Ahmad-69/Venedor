@@ -1,0 +1,39 @@
+.new-back{
+    background-color: $red;
+    .container{
+        .row{
+            .col-md-12{
+                .new{
+                    display:flex;
+                    justify-content: space-between;
+                    }
+                    .icon{
+                        font-size: 40px;
+                        padding: 35px;
+                    }
+                    .new_content{
+                        margin: 40px 0;
+                        h3{
+                            width: 400px;
+                            font-weight: bold;
+                            font-size: 20px;
+                        }
+                        p{
+                            margin-top:-8px ;
+                        }
+                    }
+                    .input-group{
+                        input[tyep=text]{
+                            background-color: $white;
+                        }
+                        button{
+                            border: 1px solid $late2;
+                            background-color: $med_black;
+                            color: $white;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+    }

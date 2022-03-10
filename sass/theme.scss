@@ -12,6 +12,9 @@
 @import "latest";
 @import "oldguy";
 @import "latestNews";
+@import "instasection";
+@import "newsletter";
+@import "footer";
 *{
     margin: 0;
     padding: 0;
@@ -125,4 +128,26 @@ text-transform: capitalize;
 }
 .cal-1{
     color: $current_price !important;
+}
+#chgr{
+    border: 1px solid $border;
+    display: block;
+    text-decoration: none;
+    color: $head_black;
+    font-size: 12px;
+    margin: 4px 0;
+    padding: 12px 14px;
+}
+#chg{
+    width: 100%;
+    object-fit: cover;
+}
+#send_1{
+    outline: none;
+    border: none;
+    border:2px solid $black;
+    padding: 4px 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    background: transparent;
 }
